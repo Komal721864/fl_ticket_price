@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form action="/predict" method="post">
+            <h1>FLIGHT TICKET PRICE PREDICTION</h1>
+
+            <label>Airline: </label> <input type="text" name="airline"> <br><br>
+            <label>Flight Name: </label> <input type="text" name="flight_name"> <br><br>
+            <label>Source City: </label> <input type="text" name="source_city"> <br><br>
+            <label>Departure Time: </label> <input type="text" name="departure_time"> <br><br>
+            <label>Stops: </label> <input type="numbers" name="stops"> <br><br>
+            <label>Arrival Time: </label> <input type="text" name="arrival_time"> <br><br>
+            <label>Destination City: </label> <input type="text" name="destination_city"> <br><br>
+            <label>Flight Class: </label> <input type="number" name="flight_class"> <br><br>
+            <label>Duration: </label> <input type="number" name="duration"> <br><br>
+            <label>Days Left: </label> <input type="number" name="days_left"> <br><br>
+
+
+            <input type="submit" value="PREDICT">
+        </form>
+        {{final_price}}
+    </body>
+</html>
